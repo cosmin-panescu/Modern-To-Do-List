@@ -1,0 +1,108 @@
+:root {
+  --background-primary: #778DA9;
+  --background-secondary: #E0E1DD;
+  --second-blue: #0D1B2A;
+  --first-blue: #415A77;
+  --text-color: #1B263B;
+}
+
+body {
+  background: black;
+  background: radial-gradient(circle, black 0%, var(--background-secondary) 0%, var(--background-primary) 100%);
+}
+
+body::before {
+  opacity: 1;
+}
+
+.label {
+  background-color: var(--background-primary);
+}
+
+.ball, .music-ball {
+  background-color: var(--background-secondary);
+}
+
+.ball:hover, .music-ball:hover {
+  background: var(--text-color);
+}
+
+.header {
+  background: url("../images/background_light.jpg") center center/cover;
+  border-bottom: 3.5px solid var(--text-color);
+}
+
+#date {
+  color: var(--text-color);
+}
+
+#date h2 {
+  text-shadow: -7px 7px 15px #000000;
+}
+
+.content {
+  background: var(--background-secondary);
+}
+
+.content ul li {
+  border-bottom: 1px solid var(--text-color);
+}
+
+.content ul li:first-child {
+  border-top: 1px solid var(--text-color);
+}
+
+.content ul li p {
+  color: var(--text-color);
+}
+
+.content ul li .task-buttons a {
+  color: var(--text-color);
+}
+
+.content ul li .task-buttons a:active {
+  color: var(--text-color);
+}
+
+.content ul li .task-buttons a:hover {
+  color: var(--first-blue);
+}
+
+.bottom {
+  border-top: 3.5px solid var(--text-color);
+  background: var(--background-secondary);
+}
+
+.bottom .add-to-do a {
+  color: var(--text-color);
+}
+
+.bottom .add-to-do a:active {
+  color: var(--text-color);
+}
+
+.bottom .add-to-do a:hover {
+  color: var(--first-blue);
+}
+
+.bottom .add-to-do input {
+  color: var(--text-color);
+  background: var(--background-secondary);
+}
+
+.bottom .add-to-do input::-webkit-input-placeholder {
+  color: rgba(var(--text-color), 0.5);
+}
+
+.bottom .add-to-do input:-ms-input-placeholder {
+  color: rgba(var(--text-color), 0.5);
+}
+
+.bottom .add-to-do input::-ms-input-placeholder {
+  color: rgba(var(--text-color), 0.5);
+}
+
+.bottom .add-to-do input::placeholder {
+  color: rgba(var(--text-color), 0.5);
+}
+/*# sourceMappingURL=theme.css.map */

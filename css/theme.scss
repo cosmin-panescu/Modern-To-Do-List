@@ -1,0 +1,108 @@
+// Variables
+:root {
+    --background-primary: #778DA9;
+    --background-secondary: #E0E1DD;
+    --second-blue: #0D1B2A;
+    --first-blue: #415A77;
+    --text-color: #1B263B;
+}
+
+// Initial Setup
+body {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, var(--background-secondary) 0%, var(--background-primary) 100%);
+}
+
+// Linear Gradient transition
+body::before {
+    opacity: 1;
+}
+
+// Header 
+// Light-Dark mode
+.label {
+    background-color: var(--background-primary);
+}
+
+.ball, .music-ball {
+    background-color: var(--background-secondary);
+
+    &:hover {
+        background: var(--text-color);
+    }
+}
+
+.header {
+    background: url('../images/background_light.jpg') center center/cover;
+    border-bottom: 3.5px solid var(--text-color);
+}
+
+#date {
+    color: var(--text-color);
+
+    h2 {
+        text-shadow: -7px 7px 15px #000000;
+    }
+}
+
+// Content (tasks)
+.content {
+    background: var(--background-secondary);
+
+    ul {
+        li {
+            border-bottom: 1px solid var(--text-color);
+
+            &:first-child {
+                border-top: 1px solid var(--text-color);
+            }
+
+            p {
+                color: var(--text-color);
+            }
+
+            .task-buttons {
+                a {
+                    color: var(--text-color);
+
+                    &:active {
+                        color: var(--text-color);
+                    }
+
+                    &:hover {
+                        color: var(--first-blue);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Bottom (Adding the task)
+.bottom {
+    border-top: 3.5px solid var(--text-color);
+    background: var(--background-secondary);
+
+    .add-to-do {
+        a {
+            color: var(--text-color);
+
+            &:active {
+                color: var(--text-color);
+            }
+
+            &:hover {
+                color: var(--first-blue);
+            }
+        }
+
+        input {
+            color: var(--text-color);
+            background: var(--background-secondary);
+
+            &::placeholder {
+                color: rgba(var(--text-color), .5);
+            }
+        }
+    }
+}

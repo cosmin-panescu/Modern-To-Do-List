@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    
+    <!-- FontAwesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+     <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" id="theme-style" type="text/css" href="">
+
+    <title>To Do List</title>
+</head>
+<body>
+     
+    <div class="container">
+        <div class="card">  
+            <div class="shadow">
+
+                <!-- Header --> 
+                <div class="header">
+                    <!-- Dark/ Light Mode -->
+                    <div class="music-container">
+                        <input type="checkbox" id="music-checkbox" class="music-checkbox">
+                        <label for="music-checkbox" class="label">
+                            <i class="fas fa-pause"></i>
+                            <i class="fas fa-play"></i>
+                            <div class="music-ball"></div>
+                        </label>
+                    </div>
+
+                    <div class="light-container">
+                        <input type="checkbox" id="checkbox" class="checkbox">
+                        <label for="checkbox" class="label">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+    
+                    <!-- Date -->
+                    <div id="date">
+                        <h2 id="current-date"></h2>
+                    </div>
+                </div>
+    
+                <!-- Content (tasks) -->
+                <div class="content">
+                    <ul id="list">
+                   <!--<li class="item">
+                            <p class="text">Drink more water</p>
+                            <div class="task-buttons">
+                                <a href="#" class="check-btn"><i class="fas fa-check"></i></a>
+                                <a href="#" class="trash-btn"><i class="fas fa-trash"></i></a>
+                            </div>
+                        </li> -->
+                    </ul>
+
+                    <div class="error-message-div">
+                        <h3 class="error-message"> Please add a task! </h3>
+                    </div>
+
+                </div>
+    
+                <!-- Bottom (Add tasks) -->
+                <div class="bottom">
+                    <div class="add-to-do">
+                        <input type="text" id="input" placeholder="Add a task...">
+                        <a href="#" id="add-to-do-btn"><i class="fas fa-plus"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Music element -->
+    <audio src="background-music.mp3"  type="audio/mp3" id="background-music" loop>
+    </audio>
+
+ 
+
+   <!-- JavaScript -->
+   <script src="javascript/main.js"></script>
+</body>
+</html>
